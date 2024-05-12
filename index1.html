@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>卓逸君</title>
+    <meta name="description" content="卓逸君的起始页" />
+  </head>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background-color: #eee;
+    }
+    /* * {
+      border: 1px solid #333;
+    } */
+    .flex {
+      display: flex;
+    }
+    .column {
+      flex-direction: column;
+    }
+    .flex1 {
+      flex: 1;
+    }
+    .baiSe {
+      background-color: #fff;
+    }
+    .mg8 {
+      margin: 8px;
+    }
+    .mgr8 {
+      margin-right: 8px;
+    }
+    .mgt8 {
+      margin-top: 8px;
+    }
+    .yinYing {
+      box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+        rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+    }
+    .shuJu {
+      height: 100px;
+    }
+    .lieBiaoXiang {
+      height: 160px;
+    }
+    .daoHang {
+      padding: 10px 20px;
+      border-bottom: 1px solid rgb(201, 201, 201);
+      font-size: 14px;
+      color: #666;
+    }
+    .ceBian {
+      display: none;
+    }
+  </style>
+  <body class="flex">
+    <!--侧边栏-->
+    <div style="width: 200px; z-index: 3" class="flex column baiSe yinYing">
+      <div
+        style="
+          padding: 10px;
+          align-items: center;
+          justify-content: center;
+          border-bottom: 1px solid #999;
+          display: flex;
+        "
+      >
+        <img src="zhuoyijun.jpg" alt="卓逸君" width="60px" height="60px" />
+        <div style="margin-left: 10px">卓逸君</div>
+      </div>
+      <!--导航栏-->
+      <div class="flex1">
+        <div class="daoHang">导航</div>
+        <div class="daoHang">导航</div>
+        <div class="daoHang">导航</div>
+        <div class="daoHang">导航</div>
+      </div>
+    </div>
+
+    <!--主区域-->
+    <div class="flex1 flex column">
+      <!--头部栏-->
+      <div style="height: 60px; z-index: 2" class="baiSe yinYing"></div>
+      <!--内容区-->
+      <div class="flex1 flex" style="overflow: auto">
+        <!--左区-->
+        <div style="flex: 3" class="flex column mg8">
+          <!-- 数据区 -->
+          <div class="flex">
+            <!-- 数据块 -->
+            <div class="shuJu yinYing baiSe flex1 mgr8"></div>
+            <!-- 数据块 -->
+            <div class="shuJu yinYing baiSe flex1 mgr8"></div>
+            <!-- 数据块 -->
+            <div class="shuJu yinYing baiSe flex1 mgr8"></div>
+            <!-- 数据块 -->
+            <div class="shuJu yinYing baiSe flex1"></div>
+          </div>
+          <!--列表区-->
+          <div class="flex column">
+            <!-- 列表项 -->
+            <div class="baiSe mgt8 lieBiaoXiang yinYing"></div>
+            <!-- 列表项 -->
+            <div class="baiSe mgt8 lieBiaoXiang yinYing"></div>
+            <!-- 列表项 -->
+            <div class="baiSe mgt8 lieBiaoXiang yinYing"></div>
+          </div>
+        </div>
+        <!--右区-->
+        <div style="flex: 1" class="flex column mgt8 mgr8">
+          <!-- 提示区 -->
+          <div style="height: 150px" class="baiSe yinYing"></div>
+          <!-- 消息区 -->
+          <div style="height: 300px" class="baiSe mgt8 yinYing"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
